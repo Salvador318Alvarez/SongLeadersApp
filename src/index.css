@@ -2,6 +2,8 @@
 
 * {
   margin: 0 auto;
+  color: white;
+  text-decoration: none;
 }
 
 /* nav bar section */
@@ -40,3 +42,8 @@ nav ul {
 section {
   margin: 10vh 3vw;
 }
+
+a:hover {
+  color: lightblue;
+}
+

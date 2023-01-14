@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0 auto;
+}
+
+/* nav bar section */
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1vh 0vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Dancing Script';
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+}
+
+nav h1 {
+  color: aliceblue;
+  margin: 0 0 0 2vw;
+  font-size: 3vh;
+}
+
+nav li {
+  list-style-type: none;
+  margin-right: 5vw ;
+  font-size: 1.8vh;
+  font-family: 'Quicksand';
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+}
+
+section {
+  margin: 10vh 3vw;
+}

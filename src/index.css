@@ -2,7 +2,6 @@
 
 * {
   margin: 0 auto;
-  color: white;
   text-decoration: none;
 }
 
@@ -42,7 +41,13 @@ nav ul {
 section {
   margin: 10vh 3vw;
 }
+nav > ul > li > a {
+  color: white;
+}
 
+nav > h1 > a {
+  color: aliceblue;
+}
 a:hover {
   color: lightblue;
 }

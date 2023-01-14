@@ -1,12 +1,10 @@
-import { useState } from "react";
-
 const SongsList = () => {
-    const [songs, setSongs] = useState([
+    const songs = [
         {id: 1, title:'title 1'},
         {id: 2, title:'title 2'},
         {id: 3, title:'title 3'},
         {id: 4, title:'title 4'}
-    ]);
+    ];
 
  
     return ( 

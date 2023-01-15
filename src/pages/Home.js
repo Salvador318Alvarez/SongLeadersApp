@@ -1,4 +1,4 @@
-import Billboard from "../components/Billboard";
+import SongSelection from "../components/SongSelection";
 
 const Home = () => {
     const subtitle ='subtitle';
@@ -6,12 +6,30 @@ const Home = () => {
     //can call the prop what you want 
     return ( 
         <section>
-            <h1>Home</h1>
-            <Billboard title="Events" subtitle={subtitle}/> 
-            <Billboard title="Songs" subtitle='sub 1'/> 
-            <Billboard title="Games" subtitle='sub 2'/> 
-            <Billboard title="Works" subtitle='sub 3'/> 
-            <Billboard />
+            <h1 className="page-title">Upcoming Services</h1>
+            <SongSelection
+                date="Thursday, Jan. 19"
+                songOne="#1- " 
+                songTwo="#2-" 
+                songThree="#3-" 
+                songFour="#4-"
+            /> 
+            <SongSelection
+                date="Sun AM, Jan. 22"
+                songOne="#1- " 
+                songTwo="#2-" 
+                songThree="#3-" 
+                songFour="#4-"
+            /> 
+            <SongSelection
+                date="Sun PM, Jan. 22"
+                songOne="#1- " 
+                songTwo="#2-" 
+                songThree="#3-" 
+                songFour="#4-"
+            /> 
+           
+
            
         </section>
      );

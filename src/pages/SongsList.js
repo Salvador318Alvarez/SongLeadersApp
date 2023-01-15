@@ -1,4 +1,6 @@
 import { useState } from "react";
+//hooks have to be at the top levl of the component
+//have to be in the component to be used
 
 const SongsList = () => {
     const [showSongs, setShowSongs] = useState(true)

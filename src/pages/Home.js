@@ -7,11 +7,12 @@ const Home = () => {
     return ( 
         <section>
             <h1>Home</h1>
-            
             <Billboard title="Events" subtitle={subtitle}/> 
+            <Billboard title="Songs" subtitle='sub 1'/> 
+            <Billboard title="Games" subtitle='sub 2'/> 
+            <Billboard title="Works" subtitle='sub 3'/> 
             <Billboard />
-            <Billboard />
-            <Billboard />
+           
         </section>
      );
 }

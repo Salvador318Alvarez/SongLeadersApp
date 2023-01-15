@@ -1,9 +1,13 @@
-const Billboard = (props) => { //the props property the call it with .theNameYouGaveIt
+import React from "react";
+
+const Billboard = ({title, subtitle}) => { //the props property the call it with .theNameYouGaveIt
+    //React.Fragment need when passing props
+    // shorthand <>  </>
     return ( 
-        <section>
-            <h1>{props.title? props.title : 'BILLBOARD'}</h1>
-            <p>{props.subtitle? props.subtitle : 'no subtitle'}</p>
-        </section>
+        <React.Fragment> 
+            <h5>{title? title : 'no title'}</h5>
+            <p>{subtitle? subtitle : 'no subtitle'}</p>
+        </React.Fragment>
      );
 }
  

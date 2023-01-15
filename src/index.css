@@ -111,7 +111,7 @@ a:hover {
 /* Randomizer Page */
 
 .randomizer {
-  background-color: rgba(0,0,0,0.08);
+  background-color: ghostwhite;
   border-radius: 30px;
   padding: 2vh 2vw;
 }

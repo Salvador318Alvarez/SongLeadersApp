@@ -89,6 +89,7 @@ a:hover {
 
 .song-selection h3 {
   text-align: center;
+  margin-bottom: 2vh;
 }
 
 .song-selection li {
@@ -106,6 +107,12 @@ a:hover {
 
 .songs-list ul {
   padding: 0;
+}
+
+.songs-list input {
+  line-height: 4vh;
+  width: 95%;
+  font-size: 2vh;
 }
 
 /* Randomizer Page */

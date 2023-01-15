@@ -1,5 +1,4 @@
 import React from "react";
-import { Paper } from "@mui/material";
 
 const SongSelection = ({date, songOne, songTwo, songThree, songFour}) => { //the props property the call it with .theNameYouGaveIt
     //React.Fragment need when passing props

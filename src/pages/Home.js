@@ -1,7 +1,6 @@
 import SongSelection from "../components/SongSelection";
 
 const Home = () => {
-    const subtitle ='subtitle';
     // props practice 
     //can call the prop what you want 
     return ( 

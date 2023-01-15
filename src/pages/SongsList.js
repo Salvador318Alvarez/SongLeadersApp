@@ -23,7 +23,7 @@ const SongsList = () => {
     return ( 
         <section>
 
-            {showSongs && (
+            {showSongs && ( //conditional template 
                 <div>
                     <button onClick={()=> setShowSongs(false)}>hide songs</button>
                 </div>

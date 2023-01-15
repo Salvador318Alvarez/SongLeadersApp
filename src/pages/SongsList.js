@@ -1,17 +1,46 @@
+import { useState } from "react";
+
 const SongsList = () => {
-    const songs = [
+    const [showSongs, setShowSongs] = useState(true)
+    const [songs, setSongs] =  useState([
         {id: 1, title:'title 1'},
         {id: 2, title:'title 2'},
         {id: 3, title:'title 3'},
         {id: 4, title:'title 4'}
-    ];
+    ])
 
- 
+    console.log(showSongs);
+    const handleClick = (id) => {
+        setSongs((prevSongs) => { //use previous state to not alter state but a copy of it
+            return prevSongs.filter((song) => { //returns the array items that pass this condition
+                return id !== song.id  //i.e. if the array matches take it out
+            })
+        })
+        console.log(id);
+    }
+
+
     return ( 
         <section>
+
+            {showSongs && (
+                <div>
+                    <button onClick={()=> setShowSongs(false)}>hide songs</button>
+                </div>
+            )}
+
+            {!showSongs && (
+                <div>
+                    <button onClick={()=> setShowSongs(true)}>show songs</button>
+                </div>
+            )}
+
             <h1>Songs List</h1>
-            {songs.map((song, index)=> (
-                <p key={song.id}>{index+1}. {song.title}</p>
+            {showSongs && songs.map((song, index) => ( // conditional template
+                <div key={song.id}>
+                    <p>{index+1}. {song.title}</p>
+                    <button onClick={() => handleClick(song.id)}>delete</button>
+                </div>
             ))}
 
         </section>
